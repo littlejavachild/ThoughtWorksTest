@@ -1,0 +1,9 @@
+Compiling the Code
+cd into the "src" directory
+execute "javac -d ../bin *.java" in the terminal, without the quotes
+
+Executing the Code
+cd into the "bin" directory
+execute "java Main ../input", without the quotes
+
+The argument to "Main" can be any absolute path to file that has the input

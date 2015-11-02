@@ -1,0 +1,18 @@
+Design and Assumptions
+
+The code is designed to use the Command design pattern. Each line of the input can be appropriately represented by a command.  
+"glob is I" becomes TranslateCommand because an alien word is translated to its Roman equivalent.  
+"glob glob Silver is 34 Credits" becomes AddCreditCommand as information about the credits of a commodity like Silver or Gold is provided.  
+"how much is pish tegj glob glob ?" becomes GetValueCommand because the decimal value of an alien number is requested.
+"how many Credits is glob prok Silver ?" becomes GetCreditsCommand as the credit value for a commodity is requested.
+anything else becomes an InvalidCommand
+
+All commands implement the Command<E> interface. The use of generics is to allow the execute() methods to return the results of their execution.
+
+The CommandProvider class is responsible for providing the commands based on the string input. It performs simple checks by tokenizing the string and returns the command. It also maintains a cache to speed up processing for super-large files. 
+
+The IntergalacticDictionary class is similar to a person's real notebook. It keeps track of what alien words have been translated, how much a commodity like gold or silver costs and the mapping of roman numbers to decimal equivalents.
+
+The information about the costs of commodities is stored on a "per unit quantity" basis. For example, if the input provides information about glob glob (2) units of Silver, the IntergalacticDictionary class will store the cost of glob (1) unit of Silver. This simplifies the calculation of costs in future queries.	
+
+The implementation is designed to be used by a single user.

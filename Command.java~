@@ -1,5 +1,0 @@
-package com.fasih.tworks;
-
-public interface Command<E> {
-	E execute();
-}

@@ -4,9 +4,19 @@ import org.junit.runner.notification.Failure;
 
 public class TestRunner {
   public static void main(String[] args) {
-    Result result = JUnitCore.runClasses( TranslateTest.class );
+    Result result = JUnitCore.runClasses(
+    					TranslateTest.class,
+    					AddCreditsTest.class,
+    					GetValueTest.class,
+    					GetCreditTest.class,
+    					MissingTranslationTest.class,
+    					InvalidTranslateTest.class,
+    					InvalidCreditTest.class,
+    					MissingCommodityTest.class,
+    					WoodchuckTest.class
+    				);
     for (Failure failure : result.getFailures()) {
-      System.out.println(failure.getDescription());
+      System.err.println( failure.toString() );
     }
   }
 } 

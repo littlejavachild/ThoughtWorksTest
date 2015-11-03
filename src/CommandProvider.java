@@ -101,4 +101,8 @@ public class CommandProvider {
 		return true;
 	}
 	//------------------------------------------------------------------------------
+	public IntergalacticDictionary getDict(){
+		return dict;
+	}
+	//------------------------------------------------------------------------------
 }

@@ -1,0 +1,18 @@
+Building the project
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+Prerequisites:
+Maven 3.* installed (on your path)
+environment variable JAVA_HOME set to the home of your Java 8 JDK
+
+
+cd into the project directory
+execute "mvn clean install"
+
+
+This will
+
+- compile the sources
+- execute the tests
+- run the main class with the provided input file
+- Tadah!

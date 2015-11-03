@@ -1,6 +1,7 @@
 Design and Assumptions
+The code is written using Java 7 and uses Java 7's NIO and will require the appropriate JDK. 
 
-The code is designed to use the Command design pattern. Each line of the input can be appropriately represented by a command.  
+The code is designed to use the Command design pattern. The use of Command pattern allows for adding more commands later without modifying the existing comamnds. Each line of the input can be appropriately represented by a command.  
 "glob is I" becomes TranslateCommand because an alien word is translated to its Roman equivalent.  
 "glob glob Silver is 34 Credits" becomes AddCreditCommand as information about the credits of a commodity like Silver or Gold is provided.  
 "how much is pish tegj glob glob ?" becomes GetValueCommand because the decimal value of an alien number is requested.

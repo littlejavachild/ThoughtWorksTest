@@ -10,7 +10,6 @@ Executing the Code
 ----------------------------------------------------------------------------
 cd into the "bin" directory
 execute "java Main ../input", without the quotes
-
 The argument to "Main" can be any absolute path to file that has the input
 
 
@@ -19,6 +18,8 @@ Compiling and Executing the Tests
 ----------------------------------------------------------------------------
 To execute the tests, you must first compile the code and then follow these steps
 
+Download the JUnit (http://bit.ly/My9IXz) jar and place it in "lib" folder
+Download the Hamcrest (http://bit.ly/1gbl25b) jar and place it in "lib" folder
 cd into "test" folder
 If you are using Linux, execute the following commands in the terminal
 	"javac -cp .:../lib/junit-4.12.jar:../bin/ *.java" without the quotes

@@ -1,2 +1,8 @@
-.*
 target
+
+## Eclipse:
+.*
+
+## IntelliJ:
+*.iml
+*.iws

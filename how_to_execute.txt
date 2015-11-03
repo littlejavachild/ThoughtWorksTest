@@ -1,9 +1,28 @@
 Compiling the Code
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
 cd into the "src" directory
 execute "javac -d ../bin *.java" in the terminal, without the quotes
 
+
 Executing the Code
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
 cd into the "bin" directory
 execute "java Main ../input", without the quotes
 
 The argument to "Main" can be any absolute path to file that has the input
+
+
+Compiling and Executing the Tests
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+To execute the tests, you must first compile the code and then follow these steps
+
+cd into "test" folder
+If you are using Linux, execute the following commands in the terminal
+	"javac -cp .:../lib/junit-4.12.jar:../bin/ *.java" without the quotes
+	"java -cp .:../bin/:../lib/junit-4.12.jar:../lib/hamcrest-core-1.3.jar TestRunner" without the quotes
+If you are using Windows, execute the following commands in the terminal
+	"javac -cp .;../lib/junit-4.12.jar;../bin/ *.java" without the quotes
+	"java -cp .;../bin/;../lib/junit-4.12.jar;../lib/hamcrest-core-1.3.jar TestRunner" without the quotes
